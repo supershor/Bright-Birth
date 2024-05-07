@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/recycler_main"/>
         <androidx.appcompat.widget.AppCompatButton
-            android:alpha="0.7"
+            android:alpha=".8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/less_border_try_new_date"

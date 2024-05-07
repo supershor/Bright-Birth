@@ -41,4 +41,15 @@
     <string name="name">Name : </string>
     <string name="birthdate">BirthDate : </string>
     <string name="try_new_date">Try New Date</string>
+    <string name="change_language">Change Language</string>
+    <string name="contact_owner">Contact Owner</string>
+    <string name="logout">Logout</string>
+    <string name="report_error">Report Error</string>
+    <string name="refresh">Refresh</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="sure_to_logout">Are you sure you want to Logout ?</string>
+    <string name="already_exists_with_same_name_and_date">Birthdate with same name and date already exists.</string>
+    <string name="try_changing_fields">Try changing name or date.</string>
+    <string name="can_not_contain_in_name">Name cannot contain</string>
 </resources>

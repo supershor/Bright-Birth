@@ -41,4 +41,15 @@
     <string name="name">नाम : </string>
     <string name="birthdate">जन्म तिथि : </string>
     <string name="try_new_date">नई तिथि आज़माएं</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="contact_owner">संपर्क ऐप मालिक</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="report_error">त्रुटि की रिपोर्ट करें</string>
+    <string name="refresh">ताज़ा</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="already_exists_with_same_name_and_date">समान नाम और तारीख वाली जन्मतिथि पहले से मौजूद है।</string>
+    <string name="try_changing_fields">नाम या दिनांक बदलने का प्रयास करें।</string>
+    <string name="sure_to_logout">क्या आप लॉग आउट करना चाहते हैं ?</string>
+    <string name="can_not_contain_in_name">नाम शामिल नहीं हो सकता</string>
 </resources>
