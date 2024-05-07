@@ -36,4 +36,9 @@
     <string name="both_password_must_be_same">Both passwords must be same</string>
     <string name="name_greater_then_1">Name must be greater than 1 characters</string>
     <string name="I_agree_terms_and_condition">Please agree to terms and conditions.</string>
+    <string name="Error_in_fetching_account_details">Error in fetching account details.</string>
+    <string name="try_again">Please make sure you are connected to internet or try restarting the app.</string>
+    <string name="name">Name : </string>
+    <string name="birthdate">BirthDate : </string>
+    <string name="try_new_date">Try New Date</string>
 </resources>

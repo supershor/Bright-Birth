@@ -15,14 +15,43 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:theme="@style/font_bold"
+        style="@style/font_bold"
+        tools:ignore="ScrollViewSize">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Bright Birth"
+        app:titleTextColor="@color/black"
+        app:subtitleTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_main_page"/>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
-            android:id="@+id/main_recycler_view"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_main"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:alpha="0.7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/less_border_try_new_date"
+            android:text="@string/try_new_date"
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/add_new_date"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            android:theme="@style/font_bold"
+            style="@style/font_bold"
+            android:padding="@dimen/_5sdp"
+            android:textAlignment="center"/>
     </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

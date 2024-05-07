@@ -113,10 +113,33 @@ public class Main_loading extends AppCompatActivity {
         new Handler().postDelayed(() -> {
             handler_run_complete=true;
             if (!update_going_on){
-                startActivity(intent);
-                finishAffinity();
+                if (intent!=null){
+                    startActivity(intent);
+                    finishAffinity();
+                }else {
+                    retry();
+                    Log.d( "refresh:--------------------------------------------","intent null");
+                }
+
             }
-        },6100);
+        },6000);
+    }
+    public void retry(){
+        new Handler().postDelayed(() -> {
+            handler_run_complete=true;
+            if (!update_going_on){
+                if (intent!=null){
+                    startActivity(intent);
+                    finishAffinity();
+                }else {
+                    Toast.makeText(this, getString(R.string.Error_in_fetching_account_details), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, getString(R.string.try_again), Toast.LENGTH_SHORT).show();
+                    retry();
+                    Log.d( "refresh:--------------------------------------------","intent null");
+                }
+
+            }
+        },6000);
     }
     public void update(){
         AlertDialog.Builder alert=new AlertDialog.Builder(Main_loading.this);

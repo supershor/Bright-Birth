@@ -36,4 +36,9 @@
     <string name="both_password_must_be_same">पासवर्ड 8 अक्षर से अधिक होना चाहिए|</string>
     <string name="name_greater_then_1">नाम 1 अक्षर से बड़ा होना चाहिए|</string>
     <string name="I_agree_terms_and_condition">कृपया नियम एवं शर्तों से सहमत हों</string>
+    <string name="Error_in_fetching_account_details">खाता विवरण प्राप्त करने में त्रुटि|</string>
+    <string name="try_again">कृपया सुनिश्चित करें कि आप इंटरनेट से कनेक्ट हैं या ऐप को पुनः प्रारंभ करने का प्रयास करें।</string>
+    <string name="name">नाम : </string>
+    <string name="birthdate">जन्म तिथि : </string>
+    <string name="try_new_date">नई तिथि आज़माएं</string>
 </resources>

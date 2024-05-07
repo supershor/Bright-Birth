@@ -34,6 +34,19 @@ android {
 
 dependencies {
 
+
+
+    //noinspection UseTomlInstead
+    implementation("com.google.ai.client.generativeai:generativeai:0.5.0")
+
+    // Required for one-shot operations (to use `ListenableFuture` from Guava Android)
+    //noinspection UseTomlInstead
+    implementation("com.google.guava:guava:32.0.1-android")
+
+    // Required for streaming operations (to use `Publisher` from Reactive Streams)
+    //noinspection UseTomlInstead
+    implementation("org.reactivestreams:reactive-streams:1.0.4")
+
     //noinspection UseTomlInstead
     implementation ("com.airbnb.android:lottie:6.2.0")
     //noinspection UseTomlInstead
