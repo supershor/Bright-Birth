@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "777361115811",
+    "project_id": "bright-birth",
+    "storage_bucket": "bright-birth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777361115811:android:18486eb9f499d9d8e68d16",
+        "android_client_info": {
+          "package_name": "com.om_tat_sat.brightbirth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL22Rf1gKy2uIjWeckL5r2agLMoeFJ3Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
