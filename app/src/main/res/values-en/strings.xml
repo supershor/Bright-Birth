@@ -53,4 +53,11 @@
     <string name="try_changing_fields">Try changing name or date.</string>
     <string name="can_not_contain_in_name">Name cannot contain</string>
     <string name="testing">dsvbidbvbkjfbksdbcjkldsbl fcelflijkbhxqoiwrqhfbcohocbhrohfcbvhohrvcguwnrho3rwhcfbwr;yc hbiowrec bdfaionrsbvga wsedtb4wvrsdbtvw4srd bsdxgdvtdsx bcvwesbvdve tsdvcg54vwesvdyyr;sd</string>
+    <string name="birthday_rarity">Birthday Rarity</string>
+    <string name="day_specific_facts">Day specific facts</string>
+    <string name="historical_events">Historical Events</string>
+    <string name="notable_births">Notable Births</string>
+    <string name="notable_deaths">Notable Deaths</string>
+    <string name="zodiac_facts">Zodiac Facts</string>
+    <string name="hidden_zodiac_facts">Hidden Zodiac Facts</string>
 </resources>

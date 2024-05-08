@@ -53,4 +53,11 @@
     <string name="sure_to_logout">क्या आप लॉग आउट करना चाहते हैं ?</string>
     <string name="can_not_contain_in_name">नाम शामिल नहीं हो सकता</string>
     <string name="testing">dsvbidbvbkjfbksdbcjkldsbl fcelflijkbhxqoiwrqhfbcohocbhrohfcbvhohrvcguwnrho3rwhcfbwr;yc hbiowrec bdfaionrsbvga wsedtb4wvrsdbtvw4srd bsdxgdvtdsx bcvwesbvdve tsdvcg54vwesvdyyr;sd</string>
+    <string name="birthday_rarity">जन्मदिन दुर्लभता</string>
+    <string name="day_specific_facts">दिन विशेष तथ्य</string>
+    <string name="historical_events">ऐतिहासिक घटनाओं</string>
+    <string name="notable_births">उल्लेखनीय जन्म</string>
+    <string name="notable_deaths">उल्लेखनीय मौतें</string>
+    <string name="zodiac_facts">राशि चक्र तथ्य</string>
+    <string name="hidden_zodiac_facts">छिपे हुए राशि चक्र तथ्य</string>
 </resources>
