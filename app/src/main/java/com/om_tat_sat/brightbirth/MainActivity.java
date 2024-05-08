@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
         }
         //initializing
         add_new_date=findViewById(R.id.add_new_date);
-        arrayList=new ArrayList<name_bday_holder>();
+        arrayList= new ArrayList<>();
         key=new ArrayList<>();
         recyclerView=findViewById(R.id.recycler_main);
         LinearLayoutManager manager = new LinearLayoutManager(this);
@@ -228,7 +228,13 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
 
     @Override
     public void click(int i, int j) {
-        Toast.makeText(this, i+"="+j, Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(MainActivity.this, Birth_data.class);
+        intent.putExtra("name",arrayList.get(i).getName());
+        intent.putExtra("birth_date",arrayList.get(i).getDate());
+        intent.putExtra("birth_month",arrayList.get(i).getMonth());
+        intent.putExtra("birth_year",arrayList.get(i).getYear());
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
     }
     public void changeLanguage(String  language){
         Resources resources=this.getResources();
