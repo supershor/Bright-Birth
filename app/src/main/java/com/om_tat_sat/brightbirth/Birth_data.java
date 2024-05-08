@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -187,7 +188,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -299,7 +301,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -323,7 +326,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -348,7 +352,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -372,7 +377,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -396,7 +402,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -421,7 +428,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }
@@ -454,7 +462,8 @@ public class Birth_data extends AppCompatActivity {
 
             @Override
             public void onFailure(Throwable t) {
-                t.printStackTrace();
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
             }
         }, this.getMainExecutor());
     }

@@ -3,18 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/bright_birth_main_background"
+    android:background="@color/candle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Birth_data">
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:lottie_rawRes="@raw/chill_girl"
-        android:scaleType="fitCenter"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        />
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

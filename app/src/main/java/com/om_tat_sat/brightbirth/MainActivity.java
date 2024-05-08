@@ -37,6 +37,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
     FirebaseAuth firebaseAuth;
     SharedPreferences app_language;
     int language=0;
-    AppCompatButton add_new_date;
+    FloatingActionButton add_new_date;
     TextView english;
     TextView hindi;
     CheckBox english_checkbox;
