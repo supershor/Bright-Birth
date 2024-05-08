@@ -111,51 +111,51 @@ public class Birth_data extends AppCompatActivity {
         Hidden_Zodiac_Facts();
     }
     public void setZodiac_traits(){
-        hashMap_zodiac_traits.put("Aries","✧Characteristics: Dynamic, assertive, passionate.\n" +
+        hashMap_zodiac_traits.put("Aries ( मेष )","✧Characteristics: Dynamic, assertive, passionate.\n" +
                 "✧Personality Traits: Adventurous, confident, independent.\n" +
                 "✧Strengths: Leadership skills, courage, determination.\n" +
                 "✧Weaknesses: Impatience, impulsiveness, short-tempered nature.");
-        hashMap_zodiac_traits.put("Taurus","✧Characteristics: Reliable, practical, patient.\n" +
+        hashMap_zodiac_traits.put("Taurus ( वॄष )","✧Characteristics: Reliable, practical, patient.\n" +
                 "✧Personality Traits: Grounded, loyal, sensual.\n" +
                 "✧Strengths: Stability, persistence, strong work ethic.\n" +
                 "✧Weaknesses: Stubbornness, possessiveness, resistance to change.");
-        hashMap_zodiac_traits.put("Gemini","✧Characteristics: Versatile, curious, sociable.\n" +
+        hashMap_zodiac_traits.put("Gemini ( मिथुन )","✧Characteristics: Versatile, curious, sociable.\n" +
                 "✧Personality Traits: Intelligent, adaptable, expressive.\n" +
                 "✧Strengths: Communication skills, versatility, and quick thinking.\n" +
                 "✧Weaknesses: Restlessness, inconsistency, tendency to be superficial.");
-        hashMap_zodiac_traits.put("Cancer","✧Characteristics: Nurturing, intuitive,emotional.\n" +
+        hashMap_zodiac_traits.put("Cancer ( कैंसर )","✧Characteristics: Nurturing, intuitive,emotional.\n" +
                 "✧Personality Traits: Compassionate, empathetic, protective.\n" +
                 "✧Strengths: Sensitivity, loyalty, strong intuition.\n" +
                 "✧Weaknesses: Moodiness, clinginess, sensitivity to criticism.");
-        hashMap_zodiac_traits.put("Leo","✧Characteristics: Confident, generous, charismatic.\n" +
+        hashMap_zodiac_traits.put("Leo ( सिंह )","✧Characteristics: Confident, generous, charismatic.\n" +
                 "✧Personality Traits: Creative, passionate, natural leaders.\n" +
                 "✧Strengths: Leadership abilities, enthusiasm, self-expression.\n" +
                 "✧Weaknesses: Egotism, stubbornness, desire for attention.");
-        hashMap_zodiac_traits.put("Virgo","✧Characteristics: Analytical, practical, perfectionist.\n" +
+        hashMap_zodiac_traits.put("Virgo ( कन्या )","✧Characteristics: Analytical, practical, perfectionist.\n" +
                 "✧Personality Traits: Detail-oriented, reliable, and hardworking.\n" +
                 "✧Strengths: Attention to detail, organization, and problem-solving skills.\n" +
                 "✧Weaknesses: Overcritical nature, anxiety, and the tendency to overthink.");
-        hashMap_zodiac_traits.put("Libra","✧Characteristics: Balanced, diplomatic, harmonious.\n" +
+        hashMap_zodiac_traits.put("Libra ( तुला )","✧Characteristics: Balanced, diplomatic, harmonious.\n" +
                 "✧Personality Traits: Charming, fair-minded, cooperative.\n" +
                 "✧Strengths: Diplomacy, social skills, ability to see multiple perspectives.\n" +
                 "✧Weaknesses: Indecisiveness, avoidance of conflict, people-pleasing tendencies.");
-        hashMap_zodiac_traits.put("Scorpio","✧Characteristics: Intense, passionate, mysterious.\n" +
+        hashMap_zodiac_traits.put("Scorpio ( वृश्चिक )","✧Characteristics: Intense, passionate, mysterious.\n" +
                 "✧Personality Traits: Determined, brave, and perceptive.\n" +
                 "✧Strengths: Emotional depth, loyalty, resourcefulness.\n" +
                 "✧Weaknesses: Jealousy, possessiveness, tendency to hold grudges.");
-        hashMap_zodiac_traits.put("Sagittarius","✧Characteristics: Adventurous, optimistic, philosophical.\n" +
+        hashMap_zodiac_traits.put("Sagittarius ( धनु )","✧Characteristics: Adventurous, optimistic, philosophical.\n" +
                 "✧Personality Traits: Independent, straightforward, intellectual.\n" +
                 "✧Strengths: Optimism, enthusiasm, love for exploration.\n" +
                 "✧Weaknesses: Impatience, tactlessness, a tendency towards impulsiveness.");
-        hashMap_zodiac_traits.put("Capricorn","✧Characteristics: Ambitious, disciplined, practical.\n" +
+        hashMap_zodiac_traits.put("Capricorn ( मकर )","✧Characteristics: Ambitious, disciplined, practical.\n" +
                 "✧Personality Traits: Responsible, patient, self-controlled.\n" +
                 "✧Strengths: Determination, reliability, strong work ethic.\n" +
                 "✧Weaknesses: Pessimism, rigidity, difficulty expressing emotions.");
-        hashMap_zodiac_traits.put("Aquarius","✧Characteristics: Innovative, intellectual, humanitarian.\n" +
+        hashMap_zodiac_traits.put("Aquarius ( कुंभ )","✧Characteristics: Innovative, intellectual, humanitarian.\n" +
                 "✧Personality Traits: Independent, open-minded, visionary.\n" +
                 "✧Strengths: Creativity, intellect, humanitarian pursuits.\n" +
                 "✧Weaknesses: Stubbornness, emotional detachment, rebellious nature.");
-        hashMap_zodiac_traits.put("Pisces","✧Characteristics: Compassionate, imaginative, intuitive.\n" +
+        hashMap_zodiac_traits.put("Pisces ( मीन )","✧Characteristics: Compassionate, imaginative, intuitive.\n" +
                 "✧Personality Traits: Empathetic, artistic, gentle.\n" +
                 "✧Strengths: Compassion, creativity, intuition.\n" +
                 "✧Weaknesses: Overly emotional, prone to escapism, indecisiveness.");
@@ -196,85 +196,85 @@ public class Birth_data extends AppCompatActivity {
     private void Zodiac_finder(int day,int month){
         if (month == 12){
             if (day < 22)
-                Zodiac = "Sagittarius";
+                Zodiac = "Sagittarius ( धनु )";
             else
-                Zodiac ="Capricorn";
+                Zodiac ="Capricorn ( मकर )";
         }
 
         else if (month == 1){
             if (day < 20)
-                Zodiac = "Capricorn";
+                Zodiac = "Capricorn ( मकर )";
             else
-                Zodiac = "Aquarius";
+                Zodiac = "Aquarius ( कुंभ )";
         }
 
         else if (month == 2){
             if (day < 19)
-                Zodiac = "Aquarius";
+                Zodiac = "Aquarius ( कुंभ )";
             else
-                Zodiac = "Pisces";
+                Zodiac = "Pisces ( मीन )";
         }
 
         else if(month == 3){
             if (day < 21)
-                Zodiac = "Pisces";
+                Zodiac = "Pisces ( मीन )";
             else
-                Zodiac = "Aries";
+                Zodiac = "Aries ( मेष )";
         }
         else if (month == 4){
             if (day < 20)
-                Zodiac = "Aries";
+                Zodiac = "Aries ( मेष )";
             else
-                Zodiac = "Taurus";
+                Zodiac = "Taurus ( वॄष )";
         }
 
         else if (month == 5){
             if (day < 21)
-                Zodiac = "Taurus";
+                Zodiac = "Taurus ( वॄष )";
             else
-                Zodiac = "Gemini";
+                Zodiac = "Gemini ( मिथुन )";
         }
 
         else if( month == 6){
             if (day < 21)
-                Zodiac = "Gemini";
+                Zodiac = "Gemini ( मिथुन )";
             else
-                Zodiac = "Cancer";
+                Zodiac = "Cancer ( कैंसर )";
         }
 
         else if (month == 7){
             if (day < 23)
-                Zodiac = "Cancer";
+                Zodiac = "Cancer ( कैंसर )";
             else
-                Zodiac = "Leo";
+                Zodiac = "Leo ( सिंह )";
         }
 
         else if( month == 8){
             if (day < 23)
-                Zodiac = "Leo";
+                Zodiac = "Leo ( सिंह )";
             else
-                Zodiac = "Virgo";
+                Zodiac = "Virgo ( कन्या )";
         }
 
         else if (month == 9){
             if (day < 23)
-                Zodiac = "Virgo";
+                Zodiac = "Virgo ( कन्या )";
             else
-                Zodiac = "Libra";
+                Zodiac = "Libra ( तुला )";
         }
 
         else if (month == 10){
             if (day < 23)
-                Zodiac = "Libra";
+                Zodiac = "Libra ( तुला )";
             else
-                Zodiac = "Scorpio";
+                Zodiac = "Scorpio ( वृश्चिक )";
         }
 
         else if (month == 11){
             if (day < 22)
-                Zodiac = "Scorpio";
+                Zodiac = "Scorpio ( वृश्चिक )";
             else
-                Zodiac = "Sagittarius";
+                Zodiac = "Sagittarius ( धनु )";
         }
     }
 
