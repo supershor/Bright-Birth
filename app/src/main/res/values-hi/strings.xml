@@ -6,7 +6,7 @@
     <string name="Update">अद्यतन</string>
     <string name="Update_version">ऐप का नया संस्करण उपलब्ध है, हम ऐप को अपडेट करने की सलाह देते हैं।</string>
     <string name="cancel">रद्द</string>
-    <string name="calculate_ogpa_effortlessly">ग्रेड ऐस के साथ आसानी से ओजीपीए की गणना करें.</string>
+    <string name="calculate_ogpa_effortlessly">हर दिन कुछ अनोखा होता है।</string>
     <string name="sign_up">साइन अप करें</string>
     <string name="login">लॉग इन करें</string>
     <string name="create_new_account">नया खाता बनाएँ</string>
@@ -17,7 +17,7 @@
     <string name="save">फाइल सुरक्षित करें</string>
     <string name="already_have_an_account"><u>एक खाता है? लॉग इन करें|</u></string>
     <string name="does_not_have_an_account"><u>कोई खाता नहीं है? साइन अप करें|</u></string>
-    <string name="agree_to_terms_and_condition">मैं वहां ग्रेड ऐस के नियमों और शर्तों से सहमत हूं, जिसमें घोषणा की गई है कि मेरी जानकारी सुरक्षा उद्देश्यों के लिए संग्रहीत की जाएगी|</string>
+    <string name="agree_to_terms_and_condition">मैं ब्राइट बर्थ के नियमों और शर्तों से सहमत हूं, जिसमें घोषणा की गई है कि मेरी जानकारी सुरक्षा उद्देश्यों के लिए संग्रहीत की जाएगी|</string>
     <string name="login_all_caps_heading">लॉग इन करें</string>
     <string name="welcome_back">स्वागत पुन: स्वागत है|</string>
     <string name="login_in_your_account">अपना खाता लॉगिन करें|</string>

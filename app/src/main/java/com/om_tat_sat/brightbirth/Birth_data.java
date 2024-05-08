@@ -53,6 +53,7 @@ public class Birth_data extends AppCompatActivity {
     HashMap<String ,String>hashMap_zodiac_traits;
     TextView Zodiac_traits_birthdate;
     String language_name;
+    String traits;
     String Zodiac;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -157,7 +158,38 @@ public class Birth_data extends AppCompatActivity {
                 "✧Personality Traits: Empathetic, artistic, gentle.\n" +
                 "✧Strengths: Compassion, creativity, intuition.\n" +
                 "✧Weaknesses: Overly emotional, prone to escapism, indecisiveness.");
-        Zodiac_traits_birthdate.setText(hashMap_zodiac_traits.get(Zodiac));
+        traits=hashMap_zodiac_traits.get(Zodiac);
+        Log.e( "zzzzzzzzzzzzzzzzzzz",language+"");
+        if (language==0){
+            Zodiac_traits_birthdate.setText(traits);
+        }else {
+            convert_traits();
+        }
+    }
+    private void convert_traits(){
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro","AIzaSyAYT0bN8a2zxCkrVdOV0NRGxY18fPzWqzw");
+        GenerativeModelFutures model = GenerativeModelFutures.from(gm);
+
+        Content content = new Content.Builder()
+                .addText(traits+" convert this in "+language_name)
+                .build();
+
+
+        ListenableFuture <GenerateContentResponse> response = model.generateContent(content);
+        Futures.addCallback(response, new FutureCallback<GenerateContentResponse>() {
+            @Override
+            public void onSuccess(GenerateContentResponse result) {
+                Log.e( "9999999999999 ", result.getText());
+                String resultText = Objects.requireNonNull(result.getText()).replace("**","").replace("* ","✧");
+                Zodiac_traits_birthdate.setText(resultText);
+                Log.e( "9999999999999 ", resultText);
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+                t.printStackTrace();
+            }
+        }, this.getMainExecutor());
     }
     private void Zodiac_finder(int day,int month){
         if (month == 12){
