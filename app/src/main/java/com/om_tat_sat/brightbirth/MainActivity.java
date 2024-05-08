@@ -127,8 +127,8 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
                         } else{
                             HashMap<String,String>hashMap=new HashMap<>();
                             hashMap.put("name",name.getText().toString());
-                            hashMap.put("date",datePicker.getDayOfMonth()+"_"+datePicker.getMonth()+"_"+datePicker.getYear());
-                            databaseReference.child(name.getText().toString()+"_"+datePicker.getDayOfMonth()+"_"+datePicker.getMonth()+"_"+datePicker.getYear()).setValue(hashMap)
+                            hashMap.put("date",datePicker.getDayOfMonth()+"_"+(datePicker.getMonth()+1)+"_"+datePicker.getYear());
+                            databaseReference.child(name.getText().toString()+"_"+(datePicker.getDayOfMonth()+1)+"_"+datePicker.getMonth()+"_"+datePicker.getYear()).setValue(hashMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {

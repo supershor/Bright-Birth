@@ -1,10 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/bright_birth_main_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Birth_data">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/chill_girl"
+        android:scaleType="fitCenter"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:theme="@style/font_bold"
+                    android:text="Name"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Name_birthdate"/>
+                <TextView
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:theme="@style/font_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    
+                    android:textAlignment="viewStart"
+                    android:id="@+id/name_meaning_birthdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:theme="@style/font_bold"
+                    android:text="Birthday Rarity"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Birthday_birthdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:theme="@style/font_regular"
+                    
+                    android:textAlignment="viewStart"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Birthday_Rarity_birthdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:theme="@style/font_bold"
+                    android:text="Day specific facts"
+                    android:textAlignment="viewStart"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Day_specific_facts"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    style="@style/font_regular"
+                    android:theme="@style/font_regular"
+                    
+                    android:textAlignment="viewStart"
+                android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Day_specific_facts_birthdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:theme="@style/font_bold"
+                    android:text="Historical Events"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Historical_Events"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:theme="@style/font_regular"
+                    android:layout_margin="@dimen/_5sdp"
+                    
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Historical_Events_birthdate"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:theme="@style/font_bold"
+                    android:text="Notable Births"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Notable_Births"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:theme="@style/font_regular"
+                    
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_16ssp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Notable_Births_birthdate"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:theme="@style/font_bold"
+                    android:text="Notable Deaths"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Notable_Deaths"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_regular"
+                    android:theme="@style/font_regular"
+                    android:layout_margin="@dimen/_5sdp"
+                    
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_16ssp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:id="@+id/Notable_Deaths_birthdate"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/font_bold"
+                    android:theme="@style/font_bold"
+                    android:text="Zodiac Facts"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/black"
+                    android:id="@+id/zodiac_traits"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        style="@style/font_regular"
+                        android:theme="@style/font_regular"
+                        android:padding="@dimen/_5sdp"
+                        
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16ssp"
+                        android:textColor="@color/black"
+                        android:id="@+id/Zodiac_traits_birthdate"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/font_bold"
+                        android:theme="@style/font_bold"
+                        android:text="Hidden Zodiac Facts"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_18ssp"
+                        android:textColor="@color/black"
+                        android:id="@+id/Hidden_Zodiac_Facts"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        style="@style/font_regular"
+                        android:theme="@style/font_regular"
+                        
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16ssp"
+                        android:textColor="@color/black"
+                        android:id="@+id/Hidden_Zodiac_Facts_birthdate"/>
+                </LinearLayout>
+            </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

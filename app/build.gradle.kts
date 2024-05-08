@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.om_tat_sat.brightbirth"
-        minSdk = 24
+        minSdk = 28
         targetSdk = 34
         versionCode = 2
         versionName = "2.0"
