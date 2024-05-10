@@ -1,6 +1,9 @@
+import org.gradle.internal.impldep.org.bouncycastle.util.Properties
+
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -11,15 +14,16 @@ android {
         applicationId = "com.om_tat_sat.brightbirth"
         minSdk = 28
         targetSdk = 34
-        versionCode = 4
-        versionName = "4.0"
+        versionCode = 5
+        versionName = "5.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
 
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
+            android.buildFeatures.buildConfig=true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -30,10 +34,19 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    ("25.1.8937393")
+    externalNativeBuild {
+        cmake {
+            path ("CMakeLists.txt")
+        }
+    }
 }
 
 dependencies {
 
+    //noinspection UseTomlInstead
+    implementation("com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:2.0.1")
 
 
     //noinspection UseTomlInstead
