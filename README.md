@@ -49,6 +49,12 @@ Celebrate your existence, understand your past, and embrace your astrological de
 ![2](https://github.com/supershor/Bright-Birth/assets/113038485/88f82f9f-0d19-45bf-b66f-82f2beb8f2c3)
 
 
+![3](https://github.com/supershor/Bright-Birth/assets/113038485/a6ad3c9e-db1a-4ce2-b331-2c4e3bbdd376)
+
+
+![4](https://github.com/supershor/Bright-Birth/assets/113038485/49ca3771-046c-45bc-bda7-cd4c0264578f)
+
+
 https://github.com/supershor/MarkMate/assets/113038485/ed08296e-bb91-47c4-b527-ced449db1b5e
 
 
@@ -56,6 +62,12 @@ https://github.com/supershor/MarkMate/assets/113038485/ed08296e-bb91-47c4-b527-c
 
 
 ![4](https://github.com/supershor/Bright-Birth/assets/113038485/4bc7cf55-61f1-4541-9aac-70c935ca1880)
+
+
+![2](https://github.com/supershor/Bright-Birth/assets/113038485/20aae2d2-e622-4d75-8e31-8a3455385c24)
+
+
+![5](https://github.com/supershor/Bright-Birth/assets/113038485/6b27005b-25f5-4a31-8c19-2883eb222da2)
 
 
 https://github.com/supershor/MarkMate/assets/113038485/a265f96c-d11b-4f5c-a9fa-e68c5a77be32
