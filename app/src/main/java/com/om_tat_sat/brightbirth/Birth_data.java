@@ -56,6 +56,8 @@ public class Birth_data extends AppCompatActivity {
     TextView zodiac_traits;
     HashMap<String ,String>hashMap_zodiac_traits;
     TextView Zodiac_traits_birthdate;
+    TextView Negative_traits;
+    TextView Negative_traits_birthdate;
     String language_name;
     String traits;
     String Zodiac;
@@ -81,6 +83,7 @@ public class Birth_data extends AppCompatActivity {
         birth_date=intent.getStringExtra("birth_date");
         birth_month=intent.getStringExtra("birth_month");
         birth_year=intent.getStringExtra("birth_year");
+        Zodiac=intent.getStringExtra(",zodiac");
         Name_data=findViewById(R.id.Name_birthdate);
         Name_birth_data=findViewById(R.id.name_meaning_birthdate);
         Birthday_birthdate=findViewById(R.id.Birthday_birthdate);
@@ -97,6 +100,8 @@ public class Birth_data extends AppCompatActivity {
         Hidden_Zodiac_Facts_birthdate=findViewById(R.id.Hidden_Zodiac_Facts_birthdate);
         zodiac_traits=findViewById(R.id.zodiac_traits);
         Zodiac_traits_birthdate=findViewById(R.id.Zodiac_traits_birthdate);
+        Negative_traits_birthdate=findViewById(R.id.Negative_traits_birthdate);
+        Negative_traits=findViewById(R.id.Negative_traits);
         app_language=getSharedPreferences("app_language",MODE_PRIVATE);
         language=app_language.getInt("current_language",0);
         if (language==0){
@@ -113,10 +118,47 @@ public class Birth_data extends AppCompatActivity {
         Notable_Births();
         Notable_Deaths();
 
-        Zodiac_finder(Integer.parseInt(birth_date),Integer.parseInt(birth_month));
-        zodiac_traits.setText(Zodiac);
-        setZodiac_traits();
-        Hidden_Zodiac_Facts();
+
+        Log.e( "onCreate:jdryjyrjyrdhj ", Zodiac+"");
+        if (Zodiac.contains("-1")){
+            Zodiac_finder(Integer.parseInt(birth_date),Integer.parseInt(birth_month));
+            zodiac_traits.setText(Zodiac);
+            setZodiac_traits();
+            Hidden_Zodiac_Facts();
+            Negative_Zodiac_traits();
+        }else {
+            zodiac_traits.setText(Zodiac);
+            setZodiac_traits();
+            Hidden_Zodiac_Facts();
+            Negative_Zodiac_traits();
+
+        }
+
+    }
+    private void Negative_Zodiac_traits() {
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModelFutures model = GenerativeModelFutures.from(gm);
+
+        Content content = new Content.Builder()
+                .addText("Tell me some Negative traits of Zodiac "+Zodiac+" in "+language_name)
+                .build();
+
+
+        ListenableFuture <GenerateContentResponse> response = model.generateContent(content);
+        Futures.addCallback(response, new FutureCallback<GenerateContentResponse>() {
+            @Override
+            public void onSuccess(GenerateContentResponse result) {
+                String resultText = Objects.requireNonNull(result.getText()).replace("**","").replace("* ","✧");
+                Log.e( "00000000000 ", resultText);
+                Negative_traits_birthdate.setText(resultText);
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+                Toast.makeText(Birth_data.this,t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e( "onFailure: ", t.toString());
+            }
+        }, this.getMainExecutor());
     }
     public void setZodiac_traits(){
         hashMap_zodiac_traits.put("Aries ( मेष )","✧Characteristics: Dynamic, assertive, passionate.\n" +

@@ -39,12 +39,14 @@
     <string name="Error_in_fetching_account_details">खाता विवरण प्राप्त करने में त्रुटि|</string>
     <string name="try_again">कृपया सुनिश्चित करें कि आप इंटरनेट से कनेक्ट हैं या ऐप को पुनः प्रारंभ करने का प्रयास करें।</string>
     <string name="name">नाम : </string>
+    <string name="spinner_message">राशि चुनें </string>
     <string name="birthdate">जन्म तिथि : </string>
     <string name="try_new_date">नई तिथि आज़माएं</string>
     <string name="change_language">भाषा बदलें</string>
     <string name="contact_owner">संपर्क ऐप मालिक</string>
     <string name="logout">लॉग आउट</string>
     <string name="report_error">त्रुटि की रिपोर्ट करें</string>
+    <string name="negative_traits">नकारात्मक लक्षण</string>
     <string name="refresh">ताज़ा</string>
     <string name="english">English</string>
     <string name="hindi">हिंदी</string>
@@ -60,4 +62,5 @@
     <string name="notable_deaths">उल्लेखनीय मौतें</string>
     <string name="zodiac_facts">राशि चक्र तथ्य</string>
     <string name="hidden_zodiac_facts">छिपे हुए राशि चक्र तथ्य</string>
+    <string name="select_birthdate">जन्मतिथि चुनें</string>
 </resources>

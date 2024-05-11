@@ -211,6 +211,30 @@
                         android:textSize="@dimen/_16ssp"
                         android:textColor="@color/black"
                         android:id="@+id/Hidden_Zodiac_Facts_birthdate"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/font_bold"
+                        android:theme="@style/font_bold"
+                        android:text="@string/negative_traits"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_18ssp"
+                        android:textColor="@color/black"
+                        android:id="@+id/Negative_traits"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        style="@style/font_regular"
+                        android:theme="@style/font_regular"
+
+                        android:padding="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_16ssp"
+                        android:textColor="@color/black"
+                        android:id="@+id/Negative_traits_birthdate"/>
                 </LinearLayout>
             </LinearLayout>
     </androidx.core.widget.NestedScrollView>

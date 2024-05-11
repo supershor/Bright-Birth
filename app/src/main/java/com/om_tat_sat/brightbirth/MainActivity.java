@@ -16,9 +16,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -70,7 +72,9 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
     DatePicker datePicker;
     MediaPlayer mediaPlayer;
     String issue="";
+    Spinner spinner;
     ArrayList<name_bday_holder>arrayList;
+    ArrayList<String>arr;
     ArrayList<String>key;
 
     @SuppressLint("MissingInflatedId")
@@ -115,6 +119,28 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
                 View view2= LayoutInflater.from(MainActivity.this).inflate(R.layout.add_new_name_and_birthday,null);
                 AlertDialog.Builder alertDialog=new AlertDialog.Builder(MainActivity.this,R.style.MyDialogTheme);
                 alertDialog.setView(view2);
+                arr=new ArrayList<>();
+                if (language==0){
+                    arr.add("Select Zodiac");
+                } else if (language==1) {
+                    arr.add("राशि चुनें");
+                }
+                arr.add("Aquarius ( कुंभ )");
+                arr.add("Aries ( मेष )");
+                arr.add("Cancer ( कैंसर )");
+                arr.add("Capricorn ( मकर )");
+                arr.add("Gemini ( मिथुन )");
+                arr.add("Leo ( सिंह )");
+                arr.add("Libra ( तुला )");
+                arr.add("Pisces ( मीन )");
+                arr.add("Sagittarius ( धनु )");
+                arr.add("Scorpio ( वृश्चिक )");
+                arr.add("Taurus ( वॄष )");
+                arr.add("Virgo ( कन्या )");
+                spinner=view2.findViewById(R.id.spinner_at_add_new);
+                ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(MainActivity.this,R.layout.text_spinner,arr);
+                arrayAdapter.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item);
+                spinner.setAdapter(arrayAdapter);
                 name=view2.findViewById(R.id.name_information_add_new);
                 datePicker=view2.findViewById(R.id.date_information_add_new);
                 alertDialog.setPositiveButton(getString(R.string.save), new DialogInterface.OnClickListener() {
@@ -122,12 +148,17 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
                     public void onClick(DialogInterface dialog, int which) {
                         if (check()){
                             Toast.makeText(MainActivity.this, issue, Toast.LENGTH_SHORT).show();
-                        } else if (key.contains(name.getText().toString()+"_"+datePicker.getDayOfMonth()+"_"+datePicker.getMonth()+"_"+datePicker.getYear())) {
+                        }
+                        else if (spinner.getSelectedItemPosition()==0){
+                            Toast.makeText(MainActivity.this, getString(R.string.spinner_message), Toast.LENGTH_SHORT).show();
+                        }else if (key.contains(name.getText().toString()+"_"+datePicker.getDayOfMonth()+"_"+datePicker.getMonth()+"_"+datePicker.getYear())) {
                             Toast.makeText(MainActivity.this, getString(R.string.already_exists_with_same_name_and_date), Toast.LENGTH_SHORT).show();
                             Toast.makeText(MainActivity.this, getString(R.string.try_changing_fields), Toast.LENGTH_SHORT).show();
                         } else{
                             HashMap<String,String>hashMap=new HashMap<>();
                             hashMap.put("name",name.getText().toString());
+                            hashMap.put("zodiac",spinner.getSelectedItem()+"");
+                            Log.e( "onClick: ",spinner.getSelectedItem()+"");
                             hashMap.put("date",datePicker.getDayOfMonth()+"_"+(datePicker.getMonth()+1)+"_"+datePicker.getYear());
                             databaseReference.child(name.getText().toString()+"_"+(datePicker.getDayOfMonth()+1)+"_"+datePicker.getMonth()+"_"+datePicker.getYear()).setValue(hashMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -203,7 +234,13 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
                     arrayList.clear();
                     for (DataSnapshot ds:snapshot.getChildren()) {
                         key.add(ds.getKey()+"");
-                        arrayList.add(new name_bday_holder(ds.child("name").getValue()+"",ds.child("date").getValue()+""));
+                        String zodiac;
+                        if (ds.child("zodiac").getValue()!=null){
+                            zodiac=ds.child("zodiac").getValue()+"";
+                        }else {
+                            zodiac="-1";
+                        }
+                        arrayList.add(new name_bday_holder(ds.child("name").getValue()+"",ds.child("date").getValue()+"",zodiac));
                     }
                     Recycler recycler=new Recycler(MainActivity.this,arrayList,MainActivity.this::click);
                     Log.e( "onDataChange: ", "2222222222222222222222222");
@@ -234,6 +271,7 @@ public class MainActivity extends AppCompatActivity implements Recyclerview_Inte
         intent.putExtra("birth_date",arrayList.get(i).getDate());
         intent.putExtra("birth_month",arrayList.get(i).getMonth());
         intent.putExtra("birth_year",arrayList.get(i).getYear());
+        intent.putExtra(",zodiac",arrayList.get(i).getZodiac());
         startActivity(intent);
         overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
     }

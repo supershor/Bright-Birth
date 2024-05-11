@@ -9,12 +9,14 @@
     <string name="calculate_ogpa_effortlessly">Every Day holds something unique.</string>
     <string name="sign_up">SIGN UP</string>
     <string name="login">LOGIN</string>
+    <string name="spinner_message">Select Zodiac </string>
     <string name="create_new_account">Create New Account</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="save">SAVE</string>
+    <string name="negative_traits">Negative traits</string>
     <string name="already_have_an_account"><u>Have an account ? Login.</u></string>
     <string name="does_not_have_an_account"><u>Don\'t have an account ? Sign up.</u></string>
     <string name="agree_to_terms_and_condition">I agree to terms and conditions of Bright Birth. Therefore declaring that my information will be stored for safety purposes.</string>
@@ -60,4 +62,5 @@
     <string name="notable_deaths">Notable Deaths</string>
     <string name="zodiac_facts">Zodiac Facts</string>
     <string name="hidden_zodiac_facts">Hidden Zodiac Facts</string>
+    <string name="select_birthdate">Select Birthdate</string>
 </resources>
