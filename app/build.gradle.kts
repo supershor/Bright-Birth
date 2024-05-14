@@ -9,13 +9,17 @@ plugins {
 android {
     namespace = "com.om_tat_sat.brightbirth"
     compileSdk = 34
-
+    bundle{
+        language{
+            enableSplit = false
+        }
+    }
     defaultConfig {
         applicationId = "com.om_tat_sat.brightbirth"
         minSdk = 28
         targetSdk = 34
-        versionCode = 6
-        versionName = "6.0"
+        versionCode = 7
+        versionName = "7.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
