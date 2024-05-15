@@ -22,10 +22,9 @@ Now featuring a new section where you can explore the negative traits of your zo
 
 ## Installation Guide
 
-1. Download the latest APK from the [releases](app/release) section or [playsotre](https://play.google.com/store/apps/details?id=com.om_tat_sat.brightbirth) .
+1. Download the latest APK from the [releases](app/release) section or [playsotre](https://play.google.com/store/apps/details?id=com.om_tat_sat.brightbirth) (Playstore link for now is only available for beta testers).
 2. Install the app on your Android device.
 3. Start tracking your OGPA with unparalleled ease!
-4. Playstore link for now is only available for beta testers.
 
 
 ## Support/Help
