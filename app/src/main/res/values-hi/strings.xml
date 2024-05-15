@@ -10,7 +10,7 @@
     <string name="sign_up">साइन अप करें</string>
     <string name="login">लॉग इन करें</string>
     <string name="create_new_account">नया खाता बनाएँ</string>
-    <string name="enter_name">नाम दर्ज करें</string>
+    <string name="enter_name">प्रथम नाम दर्ज करें</string>
     <string name="enter_email">ईमेल दर्ज करें</string>
     <string name="enter_password">पास वर्ड दर्ज करें</string>
     <string name="confirm_password">पासवर्ड की पुष्टि कीजिये</string>

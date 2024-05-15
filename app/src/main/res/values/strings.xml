@@ -9,7 +9,7 @@
     <string name="sign_up">SIGN UP</string>
     <string name="login">LOGIN</string>
     <string name="create_new_account">Create New Account</string>
-    <string name="enter_name">Enter Name</string>
+    <string name="enter_name">Enter First Name</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_password">Enter Password</string>
     <string name="confirm_password">Confirm Password</string>
