@@ -29,6 +29,7 @@
         <item name="font">@font/playfairdisplay_medium</item>
     </style>
     <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNeutralButtonStyle">@style/NuetralButtonStyle</item>
         <item name="android:background">@color/candle</item>
         <item name="android:textColor">@color/black</item>
         <item name="colorAccent">@color/purple</item>
@@ -45,6 +46,9 @@
         <item name="colorAccent">@color/purple</item>
     </style>
     <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/negative_button_color</item>
+    </style>
+    <style name="NuetralButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:textColor">@color/negative_button_color</item>
     </style>
 

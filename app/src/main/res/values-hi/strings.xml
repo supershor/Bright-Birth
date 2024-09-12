@@ -63,4 +63,13 @@
     <string name="zodiac_facts">राशि चक्र तथ्य</string>
     <string name="hidden_zodiac_facts">छिपे हुए राशि चक्र तथ्य</string>
     <string name="select_birthdate">जन्मतिथि चुनें</string>
+
+    <string name="sure_delete">आपके द्वारा दर्ज किया गया सारा डेटा हटा दिया जाएगा और आपको सारा डेटा किराए पर देना होगा।\nक्या आप वाकई हटाना चाहते हैं?</string>
+    <string name="delete">हटाएँ</string>
+    <string name="change">बदले</string>
+    <string name="and_zodiac_sign"> और राशि चिन्ह</string>
+    <string name="yes_delete">हाँ, हटाएँ</string>
+    <string name="with_birthday"> जन्मदिन के साथ</string>
+    <string name="Are_you_sure_you_want_to_save_information_with_name">क्या आप वाकई जानकारी को नाम</string>
+
 </resources>

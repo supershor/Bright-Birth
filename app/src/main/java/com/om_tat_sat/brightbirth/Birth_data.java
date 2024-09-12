@@ -77,7 +77,7 @@ public class Birth_data extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        getWindow().setStatusBarColor(ContextCompat.getColor(Birth_data.this,R.color.black));
+        getWindow().setStatusBarColor(ContextCompat.getColor(Birth_data.this,R.color.candle));
         intent=getIntent();
         name=intent.getStringExtra("name");
         birth_date=intent.getStringExtra("birth_date");

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BrightBirth"
         tools:targetApi="31">
         <activity
+            android:name=".AddNewData"
+            android:exported="false" />
+        <activity
             android:name=".Birth_data"
             android:exported="false" />
         <activity

@@ -56,7 +56,7 @@ public class Sign_Up extends AppCompatActivity {
             return insets;
         });
         //setting status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(Sign_Up.this,R.color.black));
+        getWindow().setStatusBarColor(ContextCompat.getColor(Sign_Up.this,R.color.candle));
 
         //setting intents
         main_page=new Intent(Sign_Up.this, MainActivity.class);

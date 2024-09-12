@@ -52,7 +52,7 @@ public class Main_loading extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        getWindow().setStatusBarColor(ContextCompat.getColor(Main_loading.this,R.color.black));
+        //getWindow().setStatusBarColor(ContextCompat.getColor(Main_loading.this,R.color.candle));
         app_language=getSharedPreferences("app_language",MODE_PRIVATE);
         language=app_language.getInt("current_language",0);
         if (language==0){

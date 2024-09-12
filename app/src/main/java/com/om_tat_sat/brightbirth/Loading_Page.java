@@ -39,7 +39,7 @@ public class Loading_Page extends AppCompatActivity {
             return insets;
         });
         //setting status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(Loading_Page.this,R.color.black));
+        //getWindow().setStatusBarColor(ContextCompat.getColor(Loading_Page.this,R.color.black));
 
         //setting up intents
         sign_up_page=new Intent(Loading_Page.this, Sign_Up.class);

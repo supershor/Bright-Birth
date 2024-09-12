@@ -63,4 +63,14 @@
     <string name="zodiac_facts">Zodiac Facts</string>
     <string name="hidden_zodiac_facts">Hidden Zodiac Facts</string>
     <string name="select_birthdate">Select Birthdate</string>
+
+    <string name="sure_delete">All the data you entered will be deleted and you will need to renter all.\nAre tou sure you want to delete ?</string>
+    <string name="delete">delete</string>
+    <string name="yes_delete">Yes, Delete</string>
+    <string name="change">change</string>
+    <string name="with_birthday"> with birthday</string>
+    <string name="Are_you_sure_you_want_to_save_information_with_name">Are you sure you want to save information with name</string>
+    <string name="and_zodiac_sign"> and zodiac sign</string>
+
+
 </resources>

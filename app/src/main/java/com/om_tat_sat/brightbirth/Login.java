@@ -48,7 +48,7 @@ public class Login extends AppCompatActivity {
             return insets;
         });
         //setting status bar color
-        getWindow().setStatusBarColor(ContextCompat.getColor(Login.this,R.color.black));
+        getWindow().setStatusBarColor(ContextCompat.getColor(Login.this,R.color.candle));
 
         //setting intents
         main_page=new Intent(Login.this, MainActivity.class);

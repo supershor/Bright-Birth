@@ -18,8 +18,8 @@ android {
         applicationId = "com.om_tat_sat.brightbirth"
         minSdk = 28
         targetSdk = 34
-        versionCode = 7
-        versionName = "7.0"
+        versionCode = 8
+        versionName = "8.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
