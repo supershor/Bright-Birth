@@ -136,7 +136,7 @@ public class Birth_data extends AppCompatActivity {
 
     }
     private void Negative_Zodiac_traits() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -218,7 +218,7 @@ public class Birth_data extends AppCompatActivity {
         }
     }
     private void convert_traits(){
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -331,7 +331,7 @@ public class Birth_data extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void Birthday_Rarity() {
         Birthday_birthdate.setText(birth_date+"/"+birth_month+"/"+birth_year);
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -357,7 +357,7 @@ public class Birth_data extends AppCompatActivity {
         }, this.getMainExecutor());
     }
     private void Hidden_Zodiac_Facts() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -382,7 +382,7 @@ public class Birth_data extends AppCompatActivity {
         }, this.getMainExecutor());
     }
     private void Day_specific_facts() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -408,7 +408,7 @@ public class Birth_data extends AppCompatActivity {
         }, this.getMainExecutor());
     }
     private void Notable_Births() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -433,7 +433,7 @@ public class Birth_data extends AppCompatActivity {
         }, this.getMainExecutor());
     }
     private void Notable_Deaths() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -458,7 +458,7 @@ public class Birth_data extends AppCompatActivity {
         }, this.getMainExecutor());
     }
     private void Historical_Events() {
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
@@ -491,7 +491,7 @@ public class Birth_data extends AppCompatActivity {
     }
     public void name_meaning(){
         Name_data.setText(name);
-        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-pro",getEncryptedKey());
+        GenerativeModel gm = new GenerativeModel(/* modelName */ "gemini-2.0-flash",getEncryptedKey());
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
